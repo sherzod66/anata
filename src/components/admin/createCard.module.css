@@ -1,0 +1,56 @@
+.create__card {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#firstName,
+#desctiption,
+#cardQuanty,
+#price {
+    display: block;
+    margin: 10px 0px;
+    border: 1px solid rgba(171, 171, 171, 0.41);
+    background: none rgb(252, 252, 252);
+    border-radius: 20px;
+    font-size: 18px;
+    color: rgb(73, 73, 73);
+    padding: 0px 10px;
+    width: 391px;
+    padding: 10px;
+}
+
+#imageUrl {
+    margin: 10px 10px;
+}
+
+main label {
+    font-size: 16px;
+    color: #fff;
+    display: block;
+}
+
+#addBtn {
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+.create__cardFile {
+    width: 200px;
+    height: 100px;
+}
+
+.create__cardFile img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
