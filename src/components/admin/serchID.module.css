@@ -1,0 +1,59 @@
+.filter__id {
+    margin: 0px 30px 0px 0px;
+}
+
+.filter__id label {
+    display: block;
+    opacity: 0.9;
+}
+
+.filter__input {
+    margin: 10px 0px 0px 0px;
+    background-color: black;
+    border: 1px solid black;
+    padding: 5px;
+    color: #ffffff;
+    transition: border 0.5s ease 0s;
+}
+
+.filter__input:focus {
+    border: 1px solid #ffffff;
+}
+
+
+.filter__status {
+    margin: 0px 30px 0px 0px;
+}
+
+.filter__status label {
+    display: block;
+}
+
+.filter__status select {
+    margin: 10px 0px 0px 0px;
+    background-color: black;
+    border: 1px solid black;
+    padding: 5px;
+    color: #ffffff;
+    transition: border 0.5s ease 0s;
+}
+
+.money__info {
+    margin: 10px 0px 0px 0px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #ffffff73;
+}
+
+.money__infoBody {
+    padding: 10px;
+}
+
+.money__infoTitle {
+    margin: 0px 0px 10px 0px;
+}
+
+.money__infoMoney {
+    margin: 0px 0px 5px 0px;
+}
+
+.money__info-profit {}
