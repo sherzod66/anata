@@ -1,0 +1,163 @@
+#name,
+#email,
+#phone,
+#pass {
+    display: block;
+    margin: 10px 0 0 0;
+    border: 2px solid #EFE3D9;
+    background: none #EFE3D9;
+    border-radius: 20px;
+    font-size: 18px;
+    color: #000000;
+    padding: 0px 10px;
+    width: 391px;
+    padding: 10px;
+    transition: border 0.5s ease 0s;
+}
+
+#name:focus {
+    border: 2px solid #000000;
+}
+
+#email:focus {
+    border: 2px solid #000000;
+}
+
+#phone:focus {
+    border: 2px solid #000000;
+}
+
+#pass:focus {
+    border: 2px solid #000000;
+}
+
+.main__auth {
+    padding: 20px 0px 0px 0px;
+    min-height: 100vh;
+    background-color: #EFE3D9;
+}
+
+.main__header {
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+.login {
+    background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+}
+
+.login.acttion {
+    background-image: linear-gradient(to right, #a50042 0%, #a52c00 100%);
+}
+
+.registration.acttion {
+    background-image: linear-gradient(to right, #a50042 0%, #a52c00 100%);
+}
+
+.login,
+.registration {
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 20px 0px 20px 0px;
+}
+
+.registration {
+    background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+}
+
+
+
+.main__row {
+    display: flex;
+    justify-content: space-between
+}
+
+.form__auth label {
+    display: inline-block;
+    font-size: 22px;
+    line-height: 24px;
+    color: #000000;
+    margin: 15px 0px 0px 0px;
+}
+
+.main__container {
+    max-width: 1000px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 30px 0;
+    background: #e6cdba;
+    box-shadow: 0px 0px 10px #00000085;
+}
+
+
+.form__auth button {
+    margin: 30px 0px 0px 0px;
+    width: 100%;
+    padding: 10px;
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    border-radius: 20px;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 2px;
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+}
+
+@media (max-width: 994px) {
+    .main__auth {
+        padding: 0px 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .main__container {
+        padding: 20px 10px;
+    }
+
+    .form__auth {
+        width: 100%;
+    }
+
+    #name,
+    #email,
+    #phone,
+    #pass {
+        width: 100%;
+
+    }
+
+    .form__auth button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .main__auth {
+        padding: 0px 10px;
+    }
+
+    .main__row {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0px 0px 0px;
+    }
+
+    .login,
+    .registration {
+        font-size: 24px;
+        font-weight: 700;
+        cursor: pointer;
+        color: #fff;
+        padding: 10px;
+        border-radius: 15px;
+        margin: 0px 0px 10px 0px;
+    }
+}

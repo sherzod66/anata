@@ -1,0 +1,346 @@
+.order__column {
+    position: relative;
+    left: 0;
+    top: 0;
+    flex: 0 1 20%;
+    margin: 20px 10px;
+}
+
+.order__column.active {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #0000003a;
+    margin: 0px 0px;
+    padding: 100px 200px;
+    transition: background-color 0.5s ease 0s;
+}
+
+.order__column.active .order__item {
+    width: 100%;
+    height: 100%;
+    background-color: #13141a;
+    overflow-y: auto;
+}
+
+.order__column.active .order__rowColumn {
+    flex: 0 0 33.333%;
+    padding: 10px 10px;
+    cursor: default;
+}
+
+.order__info {
+    position: absolute;
+    transform: scale(0);
+    transition: all 00.5s ease 0s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.order__column.active .order__info {
+    position: static;
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+    background-color: #2d3141;
+    color: #ffffff;
+    border-radius: 0px 0px 15px 15px;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.order__column.active .order__rowImg {
+    border-radius: 15px 15px 0px 0px;
+}
+
+.order__column.active .order__rowImg {
+    height: 200px;
+}
+
+
+.order__id {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    bottom: -20px;
+    transform: translate(-50%, 0px);
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.order__item {
+    width: 100%;
+    height: 280px;
+    display: block;
+    color: #fff;
+    background-color: #ffffff1a;
+    border-radius: 20px;
+    overflow: hidden;
+    text-decoration: none;
+    padding: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #000000b0;
+}
+
+.order__item::-webkit-scrollbar {
+    width: 10px;
+}
+
+.order__item::-webkit-scrollbar-track {
+    background-color: #474747;
+    border-radius: 8px;
+}
+
+.order__item::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 8px;
+}
+
+.order__item::-webkit-scrollbar-thumb:hover {
+    background-color: #022c47;
+}
+
+
+.order__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px -10px;
+}
+
+.order__rowColumn {
+    flex: 0 1 50%;
+    padding: 10px 10px;
+}
+
+.order__itemInfo {
+    position: absolute;
+    transform: scale(0);
+    opacity: 0;
+    visibility: hidden;
+    background-color: #2d3141;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0px 0px 15px 0px;
+    display: flex;
+    transition: all 0.5s ease 0s;
+    cursor: default;
+}
+
+.order__column.active .order__itemInfo {
+    position: static;
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+.order__itemInfoColumn {
+    flex: 0 1 25%;
+    font-size: 18px;
+    line-height: 24px;
+    cursor: default;
+    margin: 0px 20px 0px 0px;
+}
+
+.order__itemInfoColumn:last-child {
+    margin: 0px 0px 0px 0px;
+}
+
+.order__rowImg {
+    height: 100px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.order__rowImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.order__img {
+    width: 100%;
+    height: 200px;
+}
+
+.order__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.order__body {
+    padding: 10px;
+}
+
+.order__title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.order__date {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.order__status {
+    display: inline-block;
+    border-radius: 10px;
+    color: #222;
+    background-color: #fff;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.order__price {
+    display: inline-block;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: green;
+    padding: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+.order__prepayment {
+    display: inline-block;
+    border-radius: 10px;
+    color: #222;
+    background-color: rgb(172, 172, 172);
+    padding: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+.order__neeed {
+    display: inline-block;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: rgb(156, 0, 0);
+    padding: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+.orders__detaile {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.orders__number {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.comment__user {}
+
+.remove__order {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.remove__order.active {
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+@media (max-width: 1440px) {
+    .order__item {
+        width: 100%;
+        height: 250px;
+    }
+
+    .order__column.active {
+        padding: 50px 150px;
+    }
+}
+
+@media (max-width: 904px) {
+    .order__column {
+        flex: 0 1 33.333%;
+        margin: 0px 0px 0px 0px;
+        padding: 10px 10px;
+    }
+
+    .order__id {
+        position: absolute;
+        width: 80%;
+        left: 50%;
+        bottom: -5px;
+    }
+
+    .order__column.active {
+        padding: 40px;
+
+    }
+
+    .order__column.active .order__rowColumn {
+        flex: 0 1 50%;
+        padding: 10px 10px;
+        cursor: default;
+    }
+}
+
+@media (max-width:768px) {
+    .order__column {
+        flex: 0 1 50%;
+        margin: 0px 0px 0px 0px;
+        padding: 10px 10px;
+    }
+}
+
+@media (max-width:530px) {
+    .order__column {
+        flex: 1 1 100%;
+        margin: 0px 0px 0px 0px;
+        padding: 10px 10px;
+    }
+
+    .order__column.active .order__rowColumn {
+        flex: 1 1 100%;
+        padding: 10px 10px;
+        cursor: default;
+    }
+
+    .order__column.active {
+        padding: 30px;
+    }
+
+    .order__itemInfoColumn {
+        flex: 1 1 100%;
+    }
+
+    .order__itemInfo {
+        flex-wrap: wrap;
+    }
+
+    .order__column.active .order__id {
+        bottom: 10px;
+    }
+}
