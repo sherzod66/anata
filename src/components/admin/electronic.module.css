@@ -1,0 +1,36 @@
+.electronic {
+	width: 100%;
+	padding: 10px
+}
+
+.electronic__row {
+	display: flex;
+	flex-direction: column;
+}
+
+.electronic__column {
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+.electronic__column:last-child {
+	margin-bottom: 0px;
+}
+
+.electronic__item {
+	background-color: #2d3141;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.electronic__name {
+	font-size: 18px;
+	color: #ffffff;
+}
+
+.electronic__remove {
+	font-size: 16px;
+	cursor: pointer;
+}
