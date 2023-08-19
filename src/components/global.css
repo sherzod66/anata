@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #ffffff;
+}
+
+[class*="__container"] {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+#root {
+    overflow: hidden;
+}
+
+.login__error {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+    color: red;
+    opacity: 0;
+    transform: scale(0);
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+}
+
+.login__error.active {
+    position: static;
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+}
+
+.pass__error {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+    color: red;
+    opacity: 0;
+    transform: scale(0);
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+}
+
+.pass__error.active {
+    position: static;
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+}
